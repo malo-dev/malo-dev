@@ -120,14 +120,14 @@ open_to: collaboration & open source
 <br/>
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats-salesp07.vercel.app/api?username=LeaderMushio&count_private=true&show_icons=true&theme=tokyonight&rank_icon=github&border_radius=12&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=00D4FF&text_color=ffffff" />
-  <img height="180em" src="https://github-readme-streak-stats-salesp07.vercel.app/?user=LeaderMushio&count_private=true&theme=tokyonight&border_radius=12&hide_border=true&background=0D1117&stroke=00D4FF&ring=00D4FF&fire=FF6B35&currStreakLabel=ffffff&sideLabels=ffffff&dates=888888" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LeaderMushio&count_private=true&show_icons=true&theme=tokyonight&rank_icon=github&border_radius=12&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=00D4FF&text_color=ffffff" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LeaderMushio&hide=HTML&langs_count=8&layout=compact&theme=tokyonight&border_radius=12&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=ffffff&exclude_repo=github-readme-stats" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img height="160em" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=LeaderMushio&hide=HTML&langs_count=8&layout=compact&theme=tokyonight&border_radius=12&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=ffffff&exclude_repo=github-readme-stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LeaderMushio&theme=tokyonight&border_radius=12&hide_border=true&background=0D1117&stroke=00D4FF&ring=00D4FF&fire=FF6B35&currStreakLabel=ffffff&sideLabels=ffffff&dates=888888" />
 </div>
 
 <br/>
@@ -139,13 +139,7 @@ open_to: collaboration & open source
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LeaderMushio&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D4FF&line=00D4FF&point=FF6B35" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/LeaderMushio/LeaderMushio/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LeaderMushio&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D4FF&line=00D4FF&point=FF6B35&area=true&area_color=00D4FF" />
 </div>
 
 <br/>
@@ -158,6 +152,22 @@ open_to: collaboration & open source
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=LeaderMushio&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" />
+</div>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<h2 align="center">🐍 Contribution Snake</h2>
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeaderMushio/LeaderMushio/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LeaderMushio/LeaderMushio/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/LeaderMushio/LeaderMushio/output/github-contribution-grid-snake-dark.svg" />
+  </picture>
 </div>
 
 <br/>
