@@ -9,7 +9,7 @@ from xml.sax.saxutils import escape
 PROFILE = {
     "name": "Leader Mushio",
     "role": "R&D Engineer  ·  AI, Web, Mobile, Security",
-    "place": "Spain  ·  Remote",
+    "place": "Remote  ·  Worldwide",
     "langs": "TypeScript, Python, Vue",
 }
 
