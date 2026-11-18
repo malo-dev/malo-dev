@@ -10,7 +10,7 @@ deployment. I care about software that stays simple to change: clear service
 boundaries, boring infrastructure, and interfaces that load fast on the
 networks people actually use.
 
-Based in Spain, working remotely with teams anywhere.
+Working remotely, worldwide.
 
 <br/>
 
