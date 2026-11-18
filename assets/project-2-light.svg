@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="176" viewBox="0 0 1200 176" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+
+<rect x=".5" y=".5" width="1199" height="175" rx="16" fill="#F7F8FA" stroke="#E1E5EC"/>
+<clipPath id="c"><rect x="24" y="24" width="128" height="128" rx="10"/></clipPath>
+<g clip-path="url(#c)"><rect x="24" y="24" width="128" height="128" fill="#FFFFFF"/><path d="M24 24 L56 24 L56 56 Z" fill="#A7781E"/>
+<path d="M56 24 L88 24 L88 56 Z" fill="#DCE3EE"/>
+<path d="M88 24 L120 56 L88 56 Z" fill="#DCE3EE"/>
+<rect x="123.84" y="27.8" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="123.84" y="35.9" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="123.84" y="44.1" width="24.32" height="4.1" fill="#2E4A7B"/>
+<path d="M24 56 L56 88 L24 88 Z" fill="#A7781E"/>
+<path d="M56 76.8 L72.0 64.0 L88 76.8 L88 84.8 L72.0 72.0 L56 84.8 Z" fill="#A7781E"/>
+<path d="M88 76.8 L104.0 64.0 L120 76.8 L120 84.8 L104.0 72.0 L88 84.8 Z" fill="#DCE3EE"/>
+<path d="M120 56 L152 88 L120 88 Z" fill="#A7781E"/>
+<path d="M24 88 L56 88 L56 120 Z" fill="#DCE3EE"/>
+<path d="M56 88 L88 88 L88 120 Z" fill="#2E4A7B"/>
+<rect x="93.76" y="93.76" width="20.48" height="20.48" fill="none" stroke="#2E4A7B" stroke-width="3.5"/>
+<path d="M120 88 L152 88 L152 120 Z" fill="#2E4A7B"/>
+<path d="M24 120 L56 152 L24 152 Z" fill="#DCE3EE"/>
+<path d="M56 120 L88 152 L56 152 Z" fill="#A7781E"/>
+<rect x="91.84" y="123.8" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="91.84" y="131.9" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="91.84" y="140.1" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="123.84" y="123.8" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="123.84" y="131.9" width="24.32" height="4.1" fill="#2E4A7B"/>
+<rect x="123.84" y="140.1" width="24.32" height="4.1" fill="#2E4A7B"/></g>
+<text x="190" y="72" font-size="30" font-weight="700" fill="#17202E">project-two</text>
+<text x="190" y="110" font-size="19" fill="#5A6477">One sentence on the problem it solves and for whom.</text>
+<text x="190" y="146" font-size="16" font-weight="600" fill="#A7781E">Laravel  ·  MySQL  ·  Vue</text>
+<text x="1152" y="96" font-size="28" fill="#5A6477" text-anchor="end">↗</text>
+
+</svg>
