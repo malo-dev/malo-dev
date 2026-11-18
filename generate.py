@@ -2,27 +2,27 @@
 Génère les images du README GitHub (versions claire et sombre).
 Modifie les sections PROFILE, PROJECTS et STACK, puis lance :  python generate.py
 """
-import random, os
+import random, os, base64
 from xml.sax.saxutils import escape
 
 # ---------- À MODIFIER ----------
 PROFILE = {
     "name": "Leader Mushio",
-    "role": "Full-stack engineer",
-    "place": "Kigali, Rwanda  /  DRC",
-    "langs": "TypeScript, Python, PHP",
+    "role": "R&D Engineer  ·  AI, Web, Mobile, Security",
+    "place": "Spain  ·  Remote",
+    "langs": "TypeScript, Python, Vue",
 }
 
 PROJECTS = [
-    {"slug": "project-one",   "title": "project-one",
-     "desc": "One sentence on the problem it solves and for whom.",
-     "stack": "Next.js  ·  NestJS  ·  PostgreSQL"},
-    {"slug": "project-two",   "title": "project-two",
-     "desc": "One sentence on the problem it solves and for whom.",
-     "stack": "Laravel  ·  MySQL  ·  Vue"},
-    {"slug": "project-three", "title": "project-three",
-     "desc": "One sentence on the problem it solves and for whom.",
-     "stack": "Python  ·  Flask  ·  Hugging Face"},
+    {"slug": "DataForge-Pro", "title": "DataForge Pro", "shot": "dataforge.png",
+     "desc": "A JSON workbench in the browser: edit, validate, generate schemas, test API calls.",
+     "stack": "Vue  ·  TypeScript  ·  Node.js"},
+    {"slug": "admin-bim", "title": "BIM Next Console", "shot": "bim.png",
+     "desc": "Admin console for a banking network: accounts, treasury flows, partner governance.",
+     "stack": "Vue  ·  TypeScript  ·  Node.js"},
+    {"slug": "leaderportfolio", "title": "Portfolio", "shot": "portfolio.png",
+     "desc": "Personal site covering my AI, web, mobile and cybersecurity work.",
+     "stack": "TypeScript  ·  React  ·  Vercel"},
 ]
 
 STACK = [
@@ -117,16 +117,24 @@ def divider(t):
 
 
 def card(p, i, t):
-    w, h = 1200, 176
-    tile = kuba(24, 24, 4, 4, 32, 100 + i * 17, t, density=1)
+    w, h = 1200, 228
+    shot = ""
+    path = os.path.join("assets", "screens", p["shot"])
+    if os.path.exists(path):
+        b64 = base64.b64encode(open(path, "rb").read()).decode()
+        shot = (f'<image x="24" y="24" width="288" height="180" preserveAspectRatio="xMidYMin slice" '
+                f'href="data:image/png;base64,{b64}"/>')
+    else:
+        shot = kuba(24, 24, 9, 5, 32, 100 + i * 17, t, density=1)
     body = f'''
 <rect x=".5" y=".5" width="{w-1}" height="{h-1}" rx="16" fill="{t["surface"]}" stroke="{t["line"]}"/>
-<clipPath id="c"><rect x="24" y="24" width="128" height="128" rx="10"/></clipPath>
-<g clip-path="url(#c)"><rect x="24" y="24" width="128" height="128" fill="{t["bg"]}"/>{tile}</g>
-<text x="190" y="72" font-size="30" font-weight="700" fill="{t["text"]}">{escape(p["title"])}</text>
-<text x="190" y="110" font-size="19" fill="{t["muted"]}">{escape(p["desc"])}</text>
-<text x="190" y="146" font-size="16" font-weight="600" fill="{t["accent"]}">{escape(p["stack"])}</text>
-<text x="{w-48}" y="96" font-size="28" fill="{t["muted"]}" text-anchor="end">↗</text>
+<clipPath id="c"><rect x="24" y="24" width="288" height="180" rx="10"/></clipPath>
+<g clip-path="url(#c)"><rect x="24" y="24" width="288" height="180" fill="{t["bg"]}"/>{shot}</g>
+<rect x="24.5" y="24.5" width="287" height="179" rx="10" fill="none" stroke="{t["line"]}"/>
+<text x="344" y="76" font-size="30" font-weight="700" fill="{t["text"]}">{escape(p["title"])}</text>
+<text x="344" y="118" font-size="19" fill="{t["muted"]}">{escape(p["desc"])}</text>
+<text x="344" y="162" font-size="16" font-weight="600" fill="{t["accent"]}">{escape(p["stack"])}</text>
+<text x="{w-48}" y="120" font-size="28" fill="{t["muted"]}" text-anchor="end">↗</text>
 '''
     return svg(w, h, body, t)
 
@@ -160,9 +168,9 @@ def stack(t):
 if __name__ == "__main__":
     os.makedirs("assets", exist_ok=True)
     for name, t in THEMES.items():
-        open(f"assets/header-{name}.svg", "w").write(header(t))
-        open(f"assets/divider-{name}.svg", "w").write(divider(t))
-        open(f"assets/stack-{name}.svg", "w").write(stack(t))
+        open(f"assets/header-{name}.svg", "w", encoding="utf-8").write(header(t))
+        open(f"assets/divider-{name}.svg", "w", encoding="utf-8").write(divider(t))
+        open(f"assets/stack-{name}.svg", "w", encoding="utf-8").write(stack(t))
         for i, p in enumerate(PROJECTS):
-            open(f"assets/project-{i+1}-{name}.svg", "w").write(card(p, i, t))
+            open(f"assets/project-{i+1}-{name}.svg", "w", encoding="utf-8").write(card(p, i, t))
     print("Images générées dans ./assets")
